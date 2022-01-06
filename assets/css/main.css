@@ -1,0 +1,231 @@
+
+.header {
+    box-sizing: border-box;
+    background-color: var(--white-color);
+    height: 78px;
+}
+
+
+.menu-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__img {
+    object-fit: contain;
+    width: 170px;
+}
+.menu__contain::before {
+    content: '';
+    width: 100%;
+    height: 18px;
+    display: inline-block;
+}
+.menu__contain::after {
+    content: '';
+    width: 100%;
+    height: 21px;
+    display: inline-block;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 12px;
+    flex: 1;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+
+.menu__item {
+    padding: 0 8px;
+    position: relative;
+}
+.menu__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 5px 20px;
+    line-height: 3.4rem;
+
+}
+
+.menu__item:hover {
+    cursor:pointer;
+}
+.menu__item:hover .menu__link{
+    color: #313131;
+}
+
+.menu__item:hover .sub-menu {
+    display: block;
+}
+
+/* sub-menu cap 1 */
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 57px;
+    left: 0;
+    background-color: var(--white-color);
+    min-width: 180px;
+    list-style: none;
+    
+}
+
+.sub-menu::before{
+    content: '';
+    top:-24px;
+    height: 24px;
+    width: 100%;
+    position:absolute;
+
+}
+.sub-menu__item {
+    position: relative;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 0px 2px 5px #f1f1f1;
+
+}
+.sub-menu__item:hover,
+.sub-menu__item-2:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+.sub-menu__item:hover .sub-menu__link,
+.sub-menu__item-2:hover .sub-menu__link-2{
+    color: #313131;
+}
+.sub-menu__item:hover .sub-menu-2 {
+    display: block;
+}
+
+/* sub-menu cap 2 */
+.sub-menu-2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-color: var(--white-color);
+    min-width: 180px;
+    list-style: none;
+}
+.sub-menu-2::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    top: 0;
+    left: -20px;
+    
+}
+.sub-menu__item-2 {
+    padding: 0 8px;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 0px 2px 5px #f1f1f1;
+
+}
+.sub-menu__link-2, .sub-menu__link{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+    padding: 16px 20px;
+    line-height: 16px;
+}
+.btn__book-now {
+    color: var(--white-color);
+}
+.slide-show {
+    max-height: 800px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 774px;
+}
+.slide-show-1 {
+    /* background-color: #ccc; */
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(/assets/img/slide-01.jpg);
+    background-size: cover;
+    background-position: center center ;
+    height: 774px;
+    /* padding-top: 774px; */
+}
+
+.slide__content {
+    position: absolute;
+    top: 172px;
+    /* left: 720px; */
+    right: 0;
+}
+
+.slide-show__title {
+    background-color: #555555;
+    color: var(--white-color);
+    margin: 8px 0;
+    padding: 5px 20px 10px;
+    line-height: 45px;
+    font-size: 4.5rem;
+    transform: rotate(-2deg)
+}
+
+
+.slide-show__title > span {
+    color: var(--brand-color);
+}
+
+.list__dec-sl {
+    margin-top: 32px;
+}
+.slide-show__dec {
+    display: flex;
+    font-size: 2rem;
+    margin-top: 20px;
+    line-height: 32px;
+    min-height: 63px;
+    color: var(--white-color);
+}
+
+.slide-show__dec > i {
+    margin-top: 5px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.btn__buy-the-tour {
+    position: relative;
+    margin: auto;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 15px 50px;
+}
+
+.btn__buy-the-tour::before {
+    content: '$25';
+    position: absolute;
+    width: 50px;
+    top: -25px;
+    right: -20px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #555555;
+}
+
+.slide__control {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    color: #000;
+    background-color: #000;
+}
