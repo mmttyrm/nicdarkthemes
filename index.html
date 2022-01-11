@@ -13,9 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/grid.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <title>City Tours – Love Travel Demo</title>
 </head>
 <body>
@@ -26,6 +26,7 @@
                     <img class="logo__img"src="assets/img/logo-color-1.png" alt="">
                     <!-- <div class="logo">
                     </div> -->
+                    <i class="menu-bar__icon fas fa-bars"></i>
                     <div class="menu__contain">
                         <ul class="menu">
                             <li class="menu__item"><a href="" class="menu__link">Home</a></li>
@@ -58,6 +59,7 @@
             </div>
         </div>
         <div class="wapper">
+            <!-- slide-show -->
             <div class="slide-show">
                 <div class="slide__control slide__prev">
                     <i class="fas fa-chevron-left"></i>
@@ -68,11 +70,11 @@
                 <div class="slide-show-1">
                     <div class="grid wide position-relative">
                         <div class="slide__content">
-                                <h2 class="slide-show__title">Enjoy <span>Your </span>Holiday</h2>
+                                <h2 class="slide-show__title c-0 m-12 l-12">Enjoy <span>Your </span>Holiday</h2>
     
-                                <h2 class="slide-show__title">Width Out <span>Agency
+                                <h2 class="slide-show__title c-0 m-12 l-12">Width Out <span>Agency
                                 </span></h2>
-                            <ul class="list__dec-sl">
+                            <ul class="list__dec-sl c-0 m-12 l-12">
                                 <li class="slide-show__dec">
                                     <i class="fas fa-star"></i> 
                                         SPECTACULAR THINGS TO DO 
@@ -90,39 +92,288 @@
                                     FOR ALL SEASON  
                                 </li>
                             </ul>
-                            <button class="btn btn__buy-the-tour">BUY THE TOUR</button>
+                            <button class="btn btn__s btn__m btn__l btn__buy-the-tour">BUY THE TOUR</button>
                         </div>
                     </div>
                 </div>
-
             </div>
+            <!-- content__preface -->
             <div class="grid">
-                <div class="grid wide">
+                <div class="grid wide wide-s">
                     <div class="row content">
                         <div class="col l-8">
-                            <p class="content__preface">WALK TOUR AND SUGWAY</p>
-                            <h1 class="content__title">The Paris Experience!</h1>
+                            <p class="content__preface sm-mt-0">WALK TOUR AND SUGWAY</p>
+                            <h1 class="content__title title-color">The Paris <u>Experience</u>!</h1>
                             <div class="row content__dec">
-                                <div class="col l-6 ">
+                                <div class="wide col l-6 m-12">
                                     <p>Lorem ipsum dolor sit amet, consect etur adip iscing elit. Proin rhoncus urn a dictum neque molestie ultricies.</p>
                                 </div>
-                                <div class="col l-6">
+                                <div class="wide col l-6 m-12">
                                     <p>Lorem ipsum dolor sit amet, consect etur adip iscing elit. Proin rhoncus urn a dictum neque molestie ultricies.</p>
                                 </div>
                             </div>
-                            <button class="btn">view all packages</button>
+                            <button class="btn btn__content">view all packages</button>
                         </div>
 
-                        <div class="col l-4">
-                            <div class="conten__video">
-                                <div class="icon__play-video">
-                                    <i class="far fa-play-circle"></i>
+                        <div class="wide col l-4 m-12 c-12 sm-mt-24">
+                            <div class="content__video">
+                                    <i class="icon__play-video far fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="grid travel-section">
+                            <div class="row">
+                                <div class="wide col l-3 c-12 travel-section__item">
+                                    <a href="" class="lable lable__grdient-red">500 <span>$</span></a>
+                                    <a href="" class="travel-section__link">
+                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-01-150x150.jpg" alt="" class="travel-section__img">
+                                    </a>
+                                </div>
+                                <div class="col l-3 c-12 travel-section__item">
+                                    <a href="" class="lable lable__grdient-yellow">700 <span>$</span></a>
+                                    <a href="" class="travel-section__link">
+                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-01-150x150.jpg" alt="" class="travel-section__img">
+                                    </a>
+                                </div>
+                                <div class="col l-3 c-12 travel-section__item">
+                                    <a href="" class="lable lable__grdient-purple">300 <span>$</span></a>
+                                    <a href="" class="travel-section__link">
+                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-01-150x150.jpg" alt="" class="travel-section__img">
+                                    </a>
+                                </div>
+                                <div class="col l-3 c-12 travel-section__item">
+                                    <a href="" class="lable lable__grdient-blue">900 <span>$</span></a>
+                                    <a href="" class="travel-section__link">
+                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-01-150x150.jpg" alt="" class="travel-section__img">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
+
+                <!-- services -->
+                <div class="bg-555555 mt-64">
+                    <p class="text-center text-uppercase">MULTIPLE BENEFITS INCLUDED</p>
+                    <h1 class="text-center white-color service__title">OUR <u>SERVICES</u></h1>
+                    <div class="grid wide">
+                        <div class="row services">
+                            <div class="col l-4 c-12 m-12 service__item">
+                                <i class="service__icon fas fa-hand-holding-heart"></i>
+                                <div class="service__content">
+                                    <h3 class="service__title-content">Insurance</h3>
+                                    <p class="service__dec">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                                    <button class="btn btn__services btn__services-gr">View More</button>
+                                </div>
+                            </div>
+                            <div class="col l-4 c-12 m-12 service__item">
+                                <i class="service__icon fas fa-stethoscope"></i>
+                                <div class="service__content">
+                                    <h3 class="service__title-content">Medical Care</h3>
+                                    <p class="service__dec">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                                    <button class="btn btn__services btn__services-red">View More</button>
+                                </div>
+                            </div>
+                            <div class="col l-4 c-12 m-12 service__item">
+                                <i class="service__icon fas fa-utensils"></i>
+                                <div class="service__content">
+                                    <h3 class="service__title-content">Meals Included</h3>
+                                    <p class="service__dec">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                                    <button class="btn btn__services btn__services-bl">View More</button>
+                                </div>
+                            </div>
+                            <div class="col l-4 c-12 m-12 service__item">
+                                <i class="service__icon fas fa-key"></i>
+                                <div class="service__content">
+                                    <h3 class="service__title-content">Accessibility</h3>
+                                    <p class="service__dec">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                                    <button class="btn btn__services">View More</button>
+                                </div>
+                            </div>
+                            <div class="col l-4 c-12 m-12 service__item">
+                                <i class="service__icon fas fa-user-tie"></i>
+                                <div class="service__content">
+                                    <h3 class="service__title-content">Customer Care</h3>
+                                    <p class="service__dec">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                                    <button class="btn btn__services btn__services-purple">View More</button>
+                                </div>
+                            </div>
+                            <div class="col l-4 c-12 m-12 service__item">
+                                <i class="service__icon fas fa-shuttle-van"></i>
+                                <div class="service__content">
+                                    <h3 class="service__title-content">Shuttle Included</h3>
+                                    <p class="service__dec">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                                    <button class="btn btn__services btn__services-red">View More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sale -->
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col c-12 l-3 m-12">
+                            <div class="sale">
+                                <p class="text-center text-uppercase white-color">LAST MINUTE !</p>
+                                <h1 class="sale__title text-center white-color">
+                                    Summer 
+                                    <!-- <br> -->
+                                    <u>SALE</u></h1>
+                                <div class="row text-center white-color">
+                                    <div class="col m-6 c-6">
+                                        <h2 class="time__number">000</h2>
+                                        <h3 class="time__date text-uppercase">days</h3>
+                                    </div>
+                                    <div class="col m-6 c-6">
+                                        <h2 class="time__number">00</h2>
+                                        <h3 class="time__date text-uppercase">hours</h3>
+                                    </div>
+                                    <div class="col m-6 c-6">
+                                        <h2 class="time__number">000</h2>
+                                        <h3 class="time__date text-uppercase">minutes</h3>
+                                    </div>
+                                    <div class="col m-6 c-6">
+                                        <h2 class="time__number">000</h2>
+                                        <h3 class="time__date text-uppercase">seconds</h3>
+                                    </div>
+                                </div>
+                                <button class="btn btn__sale text-uppercase">check now</button>
+                            </div>
+                        </div>
+                        <div class="col l-9 c-12 m-12">                           
+                            <div class="row">
+                                <div class="col l-6 c-12 m-12">
+                                    <div class="sale__item">
+                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-01-1024x640.jpg" alt="" class="sale__img">
+                                        <div class="sale__content">
+                                            <div class="sale__label"><i class="fas fa-torii-gate"></i></div>
+                                            <h1 class="sale__name">Berlin</h1>
+                                            <p class="sale__local"><i class="fas fa-map-marker-alt"></i> Europe</p>
+                                            <div class="hr"> </div>
+                                            <div class="sale__sevice">
+                                                <div class="sale__sevice-name">
+                                                    <a href="" class="text-uppercase">cultural <br> relax</a>
+                                                    <span class="lable__count">+ 1</span>
+                                                </div>
+                                                <div class="sale__price">
+                                                    <del class="sale__old-price"></del>
+                                                    <a class="sale__price-number">700 <span class="sale__unit">$</span></a>
+                                                </div>                                                                                            
+                                            </div>
+                                            <div class="hr"></div>
+                                            <div class="sale__sevice-dec">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Nunc ut efficitur ante. 
+                                                    Donec dapibus dictum scelerisque.
+                                                </p>
+                                            </div>
+                                            <button class="btn btn__details btn__services-red text-uppercase">details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 c-12 m-12">
+                                    <div class="sale__item">
+                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-01-1024x640.jpg" alt="" class="sale__img">
+                                        <div class="sale__content">
+                                            <div class="sale__label sale__label-yl-or"><i class="fas fa-gopuram"></i></i></div>
+                                            <h1 class="sale__name">hong kong</h1>
+                                            <p class="sale__local"><i class="fas fa-map-marker-alt"></i> Asia</p>
+                                            <div class="hr"> </div>
+                                            <div class="sale__sevice">
+                                                <div class="sale__sevice-name">
+                                                    <a href="" class="text-uppercase">history <br> cultural</a>
+                                                    <span class="lable__count bg-yellow">+ 1</span>
+                                                </div>
+                                                <div class="sale__price">
+                                                    <del class="sale__old-price">1000</del>
+                                                    <a class="sale__price-number">500 <span class="sale__unit">$</span></a>
+                                                </div>                                                                                            
+                                            </div>
+                                            <div class="hr"></div>
+                                            <div class="sale__sevice-dec">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Nunc ut efficitur ante. 
+                                                    Donec dapibus dictum scelerisque.
+                                                </p>
+                                            </div>
+                                            <button class="btn btn__details bg-yellow text-uppercase">details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--  -->
+                <div class="grid">
+                    <div class="grid wide blog">
+                        <p class="blog__title text-uppercase text-center">from the blog</p>
+                        <h1 class="blog__title-name text-uppercase text-center title-color">articles & <u>news</u></h1>
+                        <div class="blog__contain">
+                            <div class="row">
+                                <div class="col c-12 m-12 l-6">
+                                    <div class="row blog__item mb-24">
+                                        <div class="col c-12 l-6 m-6 blog__img">
+                                            <img class="" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/04/blog-01.jpg" alt="">
+                                        </div>
+                                        <div class="col c-12 l-6 m-6 blog__content">
+                                            <p class="content__first text-uppercase">our news</p>
+                                            <h1 class="content__title title-color">Travel Events</h1>
+                                            <p class="blog__dec">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+                                            <button class="btn text-uppercase btn__blog">read more</button>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="col c-12 m-12 l-6">
+                                    <div class="row blog__item mb-24 sm-row-reverse">
+                                        <div class="col c-12 l-6 m-6 blog__img">
+                                            <img class="" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/04/blog-01.jpg" alt="">
+                                        </div>
+                                        <div class="col c-12 l-6 m-6 blog__content">
+                                            <p class="content__first text-uppercase">our news</p>
+                                            <h1 class="content__title title-color">Travel Events</h1>
+                                            <p class="blog__dec">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+                                            <button class="btn text-uppercase btn__blog">read more</button>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col c-12 m-12 l-6">
+                                    <div class="row blog__item mb-24"mb-24>
+                                        <div class="col c-12 l-6 m-6 blog__img">
+                                            <img class="" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/04/blog-01.jpg" alt="">
+                                        </div>
+                                        <div class="col c-12 l-6 m-6 blog__content">
+                                            <p class="content__first text-uppercase">our news</p>
+                                            <h1 class="content__title title-color">Travel Events</h1>
+                                            <p class="blog__dec">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+                                            <button class="btn text-uppercase btn__blog">read more</button>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="col c-12 m-12 l-6">
+                                    <div class="row blog__item mb-24 sm-row-reverse">
+                                        <div class="col c-12 l-6 m-6 blog__img">
+                                            <img class="" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/04/blog-01.jpg" alt="">
+                                        </div>
+                                        <div class="col c-12 l-6 m-6 blog__content">
+                                            <p class="content__first text-uppercase">our news</p>
+                                            <h1 class="content__title title-color">Travel Events</h1>
+                                            <p class="blog__dec">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+                                            <button class="btn text-uppercase btn__blog">read more</button>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
             </div>
         </div>
     </div>

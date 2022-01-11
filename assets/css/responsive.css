@@ -1,11 +1,121 @@
 /* >= Tablet */
-@media (min-width: 740px) {}
+@media (min-width: 740px) {
+    
+}
 
 /* PC medium resolution > */
 @media (min-width: 1113px) {}
 
 /* Tablet - PC low resolution */
-@media (min-width: 740px) and (max-width: 1023px) {}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .icon__play-video {
+        line-height: 420px;
+    }
+    .btn__m {
+        font-size: 20px;
+        padding: 15px 50px;
+    }   
+}
 
 /* > PC low resolution */
-@media (min-width: 1024px) and (max-width: 1239px) {}
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .btn__l {
+        font-size: 20px;
+        padding: 15px 50px;
+    } 
+    .blog__item {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 1239px) {
+    .header {
+        height: auto;
+    }
+    .menu-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 8px;
+    }
+    .menu__contain {
+        display: none;
+    }
+    .menu-bar__icon {
+        display: block;
+    }
+}
+ 
+@media (max-width: 1023px) {
+    .sm-row-reverse {
+        flex-direction: row-reverse;
+    }
+    .sm-mt-0 {
+        margin-top: 0 !important;
+    }
+    .sm-mt-24{
+        margin-top: 24px !important;
+    }
+    .content__video {
+        height: auto;
+    }
+
+    .travel-section {
+        position: unset;
+        height: auto;
+    }
+
+    .sale__sevice {
+        flex-direction: column;
+    }
+    .sale__price {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 739px) {
+    .wide-s {
+        width: 300px;
+        margin: auto;
+    }
+    
+    .btn__s {
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding: 10px 30px;
+    }
+    .btn__buy-the-tour::before {
+        display: none;
+    }
+    .icon__play-video {
+        line-height: 248px;
+    }
+    .menu-bar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .slide-show {
+        max-height: 500px;
+        height: 391px;
+    }
+    .slide-show-1 {
+        height: 100%;
+    }
+    .slide__content {
+        position: absolute;
+        top: 280px;
+        left: 0;
+    }
+
+    .services {
+        margin: 0;
+    }
+    .service__item {
+        flex: initial;
+        margin: 0 5px 30px;
+
+    }
+    .service__dec {
+        margin: 10px 0;
+    }
+}
