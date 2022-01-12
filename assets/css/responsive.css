@@ -118,4 +118,10 @@
     .service__dec {
         margin: 10px 0;
     }
+
+    .copyright {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 }

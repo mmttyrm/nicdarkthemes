@@ -26,6 +26,8 @@
     object-fit: contain;
     width: 170px;
 }
+
+
 .menu__contain::before {
     content: '';
     width: 100%;
@@ -152,6 +154,9 @@
 .btn__book-now {
     color: var(--white-color);
 }
+
+/*  */
+
 .slide-show {
     position: relative;
     max-height: 800px;
@@ -172,10 +177,27 @@
 
 .slide__content {
     position: absolute;
-    top: 172px;
-    /* left: 720px; */
+    top: 300px;
     right: 0;
+    min-width: 410px;
 }
+
+.slide__transition {
+    position: absolute;
+    top: 172px;
+    right: 0;
+    animation: circular-move 2s linear 2s infinite reverse;
+
+}
+/* dich-chuyen-tròn circular-move */
+@keyframes circular-move {
+    0% {right:0px; top:172px;}
+    25% {right:-3px; top:172px;}
+    50% {right:-3px; top:175px;}
+    75% {right:0px; top:175px;}
+    100% {right:0px; top:172px;}
+}
+/* end di chuyển tròn */
 
 .slide-show__title {
     background-color: #555555;
@@ -262,28 +284,40 @@
     color: var(--text-color);
 }
 
-.content__preface {
-    margin-top: 72px;
+/* title-base */
+.title__content-p {
+    margin: 0;
+    padding-top: 72px;
 }
 
-.content__title {
+.title__content-h1 {
     margin: 20px 0 25px;
-    font-size: 36px;
+    font-size: 3.6rem;
 }
-.content__title > u {
+.title__content-h1 > u {
     position: relative;
     text-decoration: none;
+    z-index: 1000;
 }
-.content__title>u::after {
+.title__content-h1>u::after {
     content: "";
     position: absolute;
     height: 5px;
     width: 100%;
     background-color: var(--brand-color);
-    bottom: 8px;
+    bottom: 10px;
     left: 0;
     z-index: -1;
 }
+.u__color-green>u::after {
+    background-color: #00a199;
+}
+.u__color-or>u::after {
+    background-color: #fc5c00;
+}
+
+/*  */
+
 .content__dec {
     margin-bottom: 35px;
 }
@@ -333,29 +367,6 @@
     margin-bottom: 84px;
 }
 
-.bg-555555 > p {
-    padding-top: 86px;
-}
-
-.service__title {
-    margin: 20px 0 25px;
-    font-size: 36px;
-}
-.service__title > u {
-    position: relative;
-    text-decoration: none;
-    z-index: 100;
-}
-.service__title>u::after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: 100%;
-    background-color: var(--brand-color);
-    bottom: 12px;
-    left: 0;
-    z-index: -1;
-}
 .services {
     display: flex;
 }
@@ -401,33 +412,12 @@
 
 .sale {
     margin-bottom: 30px;
-    padding: 38px;
+    padding: 22px 38px;
     background-color: var(--brand-color);
 }
 
 .sale>p {
     padding-bottom: 22px;
-}
-
-.sale__title {
-    margin: 20px 0 25px;
-    font-size: 40px;
-    line-height: 55px;
-}
-.sale__title > u {
-    position: relative;
-    text-decoration: none;
-    z-index: 100;
-}
-.sale__title>u::after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: 100%;
-    background-color: #ff8a30;
-    bottom: 12px;
-    left: 0;
-    z-index: -1;
 }
 
 .time__number {
@@ -557,17 +547,8 @@
 
 
 /*  */
-.blog {
-    margin-top: 46px !important;
-}
-.blog__title {
-    font-size: 1.4rem;
-    margin: 0 auto;
-    color: var(--text-color);
-}
-.blog__title-name {
-    font-size: 3.6rem;
-    margin: 20px 0 36px;
+.blog__contain {
+    margin-bottom: 58px;
 }
 .blog__item {
     border: solid 1px #ccc;
@@ -596,9 +577,10 @@
     font-size: 1.4rem;
     color: var(--text-color);
 }
-.content__title {
-    font-size: 2rem;
-    margin: 0 0 20px;
+
+.blog-content__title {
+    margin: 0 0 10px;
+    font-size: 2.8rem;
 }
 .blog__dec {
     font-size: 14px;
@@ -608,3 +590,57 @@
 .btn__blog {
     padding: 10px 20px;
 }
+
+/*  */
+.bg__footer {
+    background-image: url("http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/11/para-07.jpg?id=1845");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 86px 0;
+}
+
+.footer__container {
+    background-color: var(--white-color);
+    padding: 35px 30px;
+}
+.logo__footer {
+    max-width: 150px;
+}
+.footer__dec {
+    color:var(--text-color);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.social__icon {
+    font-size: 2.4rem;
+    padding: 24px 0;
+}
+
+.footer__item {
+    list-style: none;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.footer__item > h2 {
+    color: #555555;
+    margin: 0 0 24px;
+    font-size: 1.4rem;
+}
+.footer__link {
+    color:var(--text-color);
+}
+.footer__link > i {
+margin-right: 8px;
+}
+
+.copyright {
+    display: flex;
+    background-color: var(--brand-color);
+    justify-content: space-between;
+    padding: 5px 20px;
+    color: var(--white-color);
+    letter-spacing: .2rem;
+}
+

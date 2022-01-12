@@ -29,8 +29,11 @@ ul, li {
 .title-color{
     color: var(--text-title-color);
 }
+.text-color {
+    color: var(--text-color);
+}
 .white-color {
-    color: white;
+    color: white !important;
 }
 
 .position-relative {
@@ -40,7 +43,9 @@ ul, li {
 .text-center {
     text-align: center;
 }
-
+.text-decoration-none {
+    text-decoration: none;
+}
 .text-uppercase{
     text-transform: uppercase;
 }
@@ -50,6 +55,16 @@ ul, li {
 .mb-24 {
     margin-bottom: 24px !important;
 }
+
+.bg-green {
+    background-color: #00cc8f !important;
+}
+.bg-blue {
+    background-color: #008a9c !important;
+}
+
+/* btn */
+
 .btn {
     display: block;
     border: none;
