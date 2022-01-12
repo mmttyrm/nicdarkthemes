@@ -151,9 +151,6 @@
     padding: 16px 20px;
     line-height: 16px;
 }
-.btn__book-now {
-    color: var(--white-color);
-}
 
 /*  */
 
@@ -397,25 +394,11 @@
     padding: 10px 20px;
     font-weight: 300;
 }
-.btn__services-gr {
-    background-color: #1bbc9b;
-}
-.btn__services-red {
-    background-color: #ff6868;
-}
-.btn__services-bl {
-    background-color: #14b9d5;
-}
-.btn__services-purple {
-    background-color: #c755da;
-}
-
 .sale {
     margin-bottom: 30px;
     padding: 22px 38px;
     background-color: var(--brand-color);
 }
-
 .sale>p {
     padding-bottom: 22px;
 }
@@ -430,7 +413,6 @@
     font-size: 14px;
     font-weight: normal;
 }
-
 .btn__sale {
     margin: 38px auto 12px;
     padding: 15px 15px;
@@ -585,10 +567,6 @@
 .blog__dec {
     font-size: 14px;
     color: var(--text-color);
-}
-
-.btn__blog {
-    padding: 10px 20px;
 }
 
 /*  */

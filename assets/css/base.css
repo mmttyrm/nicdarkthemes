@@ -70,15 +70,36 @@ ul, li {
     border: none;
     text-align: center;
     font-size: 1.6rem;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border-radius: 30px;
     color: var(--white-color);
     background-color: var(--brand-color);
 }
 
+.btn__padding10-35 {
+    padding: 10px 35px;
+}
+
 .btn:hover {
     background-color: #fc7a00;
 }
+
+.btn__green {
+    background-color: #008f53;
+}
+.btn__blue {
+    background-color: #14b9d5;
+}
+.btn__red {
+    background-color: #ff6868;
+}
+.btn__purple {
+    background-color: #c755da;
+}
+.btn__yellow {
+    background-color: yellow;
+}
+
 
 .lable {
     position: absolute;
