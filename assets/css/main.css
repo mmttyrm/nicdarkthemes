@@ -65,6 +65,9 @@
     line-height: 3.4rem;
 
 }
+.btn__close {
+    display: none;
+}
 
 .menu__item:hover {
     cursor:pointer;
@@ -162,14 +165,13 @@
     height: 774px;
 }
 .slide-show-1 {
-    /* background-color: #ccc; */
     position: relative;
     background-repeat: no-repeat;
     background-image: url(/assets/img/slide-01.jpg);
     background-size: cover;
     background-position: center center ;
     height: 774px;
-    /* padding-top: 774px; */
+    z-index: -1;
 }
 
 .slide__content {
@@ -183,30 +185,47 @@
     position: absolute;
     top: 172px;
     right: 0;
-    animation: circular-move 2s linear 2s infinite reverse;
+    min-width: 493px;
 
 }
-/* dich-chuyen-tròn circular-move */
-@keyframes circular-move {
-    0% {right:0px; top:172px;}
-    25% {right:-3px; top:172px;}
-    50% {right:-3px; top:175px;}
-    75% {right:0px; top:175px;}
-    100% {right:0px; top:172px;}
-}
-/* end di chuyển tròn */
+
 
 .slide-show__title {
+    display: block;
     background-color: #555555;
     color: var(--white-color);
     margin: 8px 0;
     padding: 5px 20px 10px;
     line-height: 45px;
     font-size: 4.5rem;
-    transform: rotate(-2deg)
+    transform: rotate(-2deg);
+    /* animation: circular-move 2s ease-in-out 2s infinite reverse; */
+
 }
-
-
+/* dich-chuyen-tròn circular-move */
+@keyframes circular-move {
+    0% {
+        transform: translate(0 , 0px); 
+    }
+    25% {
+        transform: translate(0 , 3px); 
+    }
+    50% {
+        transform: translate(3px , 3px); 
+    }
+    75% {
+        transform: translate(3px , 0); 
+    }
+    100% {
+        transform: translate(0 , 0);
+     }
+    /* 0% { right:0px; top:172px;}
+    25% {right:-3px; top:172px;}
+    50% {right:-3px; top:175px;}
+    75% {right:0px; top:175px;}
+    100% {right:0px; top:172px;} */
+}
+/* end di chuyển tròn */
 .slide-show__title > span {
     color: var(--brand-color);
 }
@@ -387,11 +406,6 @@
     font-size:1.4rem;
     margin: 20px 0;
     line-height: 24px;
-    font-weight: 300;
-}
-.btn__services {
-    font-size: 1.4rem;
-    padding: 10px 20px;
     font-weight: 300;
 }
 .sale {

@@ -26,33 +26,52 @@
                     <img class="logo__img"src="assets/img/logo-color-1.png" alt="">
                     <!-- <div class="logo">
                     </div> -->
-                    <i class="menu-bar__icon fas fa-bars"></i>
+                    <i onclick="" class="menu-bar__icon fas fa-bars"></i>
                     <div class="menu__contain">
+                        
                         <ul class="menu">
+                            <li id="close-menu" onclick="" class="btn__close">
+                                <i class="icon__close far fa-times-circle"></i>
+                            </li>
                             <li class="menu__item"><a href="" class="menu__link">Home</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">PACKAGES</a>
+                            <li class="menu__item"><a href="" class="menu__link">Packages</a>
                             <ul class="sub-menu">
-                                <li class="sub-menu__item"><a href="" class="sub-menu__link lable__new ">sub1</a></li>
-                                <li class="sub-menu__item"><a href="" class="sub-menu__link lable__hot">sub2</a></li>
-                                <li class="sub-menu__item"><a href="" class="sub-menu__link">sub3</a></li>
-                                <li class="sub-menu__item"><a href="" class="sub-menu__link">sub4</a></li>
-                                <li class="sub-menu__item"><a href="" class="sub-menu__link">sub5</a>
+                                <li class="sub-menu__item"><a href="" class="sub-menu__link lable__new ">Search 1</a></li>
+                                <li class="sub-menu__item"><a href="" class="sub-menu__link lable__hot">Search 2</a></li>
+                                <li class="sub-menu__item"><a href="" class="sub-menu__link">Tour package</a>
                                     <ul class="sub-menu-2">
-                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2 lable__hot">sub1</a></li>
-                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">sub2</a></li>
-                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">sub3</a></li>
-                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">sub4</a></li>
-                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">sub5</a></li>
+                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2 lable__hot">Carousel</a></li>
+                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">Custom map</a></li>
+                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">360°</a></li>
+                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">panoramat</a></li>
+                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">Default</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu__item"><a href="" class="sub-menu__link">Destination</a></li>
+                                <li class="sub-menu__item"><a href="" class="sub-menu__link">Typology</a>
+                                    <ul class="sub-menu-2">
+                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2 lable__hot">Carousel</a></li>
+                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">Custom map</a></li>
+                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">360°</a></li>
+                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">panoramat</a></li>
+                                        <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">Default</a></li>
                                     </ul>
                                 </li>
                             </ul>
                             </li>
-                            <li class="menu__item"><a href="" class="menu__link">SHOP</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">ABOUT US</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">PAGES</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">NEWS</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
-                            <li class="menu__item"><a href="" class="menu__link btn white-color">book now</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Shop</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">About us</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Pages</a>
+                                <ul class="sub-menu-2">
+                                    <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2 lable__hot">Carousel</a></li>
+                                    <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">Custom map</a></li>
+                                    <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">360°</a></li>
+                                    <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">panoramat</a></li>
+                                    <li class="sub-menu__item-2"><a href="" class="sub-menu__link-2">Default</a></li>
+                                </ul></li>
+                            <li class="menu__item"><a href="" class="menu__link">News</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
+                            <li class="menu__item"><a href="" class="menu__link btn btn__book white-color">book now</a></li>
                         </ul>   
                     </div>
                 </div>
@@ -70,10 +89,16 @@
                 <div class="slide-show-1">
                     <div class="grid wide position-relative">
                         <div id="slide-matrix" class="slide__transition">
-                            <h2 class="slide-show__title c-0 m-12 l-12">Enjoy <span>Your </span>Holiday</h2>
-
-                            <h2 class="slide-show__title c-0 m-12 l-12">Width Out <span>Agency
-                            </span></h2>
+                            <div class="move-left">
+                                <div class="circular-move-1">
+                                    <h2 class="slide-show__title move-x c-0 m-12 l-12">Enjoy <span>Your </span>Holiday</h2>
+                                </div>
+                            </div>
+                            <div class="move-right">
+                                <div class="circular-move">
+                                    <h2 class="slide-show__title c-0 m-12 l-12">Width Out<span> Agency </span></h2>
+                                </div>
+                            </div>
 
                         </div>
                         <div class="slide__content">
@@ -135,19 +160,19 @@
                                 <div class="col l-3 c-12 travel-section__item">
                                     <a href="" class="lable lable__grdient-yellow">700 <span>$</span></a>
                                     <a href="" class="travel-section__link">
-                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-01-150x150.jpg" alt="" class="travel-section__img">
+                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-02-150x150.jpg" alt="" class="travel-section__img">
                                     </a>
                                 </div>
                                 <div class="col l-3 c-12 travel-section__item">
                                     <a href="" class="lable lable__grdient-purple">300 <span>$</span></a>
                                     <a href="" class="travel-section__link">
-                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-01-150x150.jpg" alt="" class="travel-section__img">
+                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-03-150x150.jpg" alt="" class="travel-section__img">
                                     </a>
                                 </div>
                                 <div class="col l-3 c-12 travel-section__item">
                                     <a href="" class="lable lable__grdient-blue">900 <span>$</span></a>
                                     <a href="" class="travel-section__link">
-                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-01-150x150.jpg" alt="" class="travel-section__img">
+                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-04-150x150.jpg" alt="" class="travel-section__img">
                                     </a>
                                 </div>
                             </div>
@@ -166,7 +191,7 @@
                                 <div class="service__content">
                                     <h3 class="service__title-content">Insurance</h3>
                                     <p class="service__dec">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
-                                    <button class="btn btn__services btn__services-gr">View More</button>
+                                    <button class="btn btn__normal btn__services-gr">View More</button>
                                 </div>
                             </div>
                             <div class="col l-4 c-12 m-12 service__item">
@@ -174,7 +199,7 @@
                                 <div class="service__content">
                                     <h3 class="service__title-content">Medical Care</h3>
                                     <p class="service__dec">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
-                                    <button class="btn btn__services btn__services-red">View More</button>
+                                    <button class="btn btn__normal btn__red">View More</button>
                                 </div>
                             </div>
                             <div class="col l-4 c-12 m-12 service__item">
@@ -182,7 +207,7 @@
                                 <div class="service__content">
                                     <h3 class="service__title-content">Meals Included</h3>
                                     <p class="service__dec">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
-                                    <button class="btn btn__services btn__services-bl">View More</button>
+                                    <button class="btn btn__normal btn__blue">View More</button>
                                 </div>
                             </div>
                             <div class="col l-4 c-12 m-12 service__item">
@@ -190,7 +215,7 @@
                                 <div class="service__content">
                                     <h3 class="service__title-content">Accessibility</h3>
                                     <p class="service__dec">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
-                                    <button class="btn btn__services">View More</button>
+                                    <button class="btn btn__normal">View More</button>
                                 </div>
                             </div>
                             <div class="col l-4 c-12 m-12 service__item">
@@ -198,7 +223,7 @@
                                 <div class="service__content">
                                     <h3 class="service__title-content">Customer Care</h3>
                                     <p class="service__dec">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
-                                    <button class="btn btn__services btn__services-purple">View More</button>
+                                    <button class="btn btn__normal btn__purple">View More</button>
                                 </div>
                             </div>
                             <div class="col l-4 c-12 m-12 service__item">
@@ -206,7 +231,7 @@
                                 <div class="service__content">
                                     <h3 class="service__title-content">Shuttle Included</h3>
                                     <p class="service__dec">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
-                                    <button class="btn btn__services btn__services-red">View More</button>
+                                    <button class="btn btn__normal btn__red">View More</button>
                                 </div>
                             </div>
                         </div>
@@ -277,7 +302,7 @@
                                 </div>
                                 <div class="col l-6 c-12 m-12">
                                     <div class="sale__item">
-                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-01-1024x640.jpg" alt="" class="sale__img">
+                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/package-02-1024x640.jpg" alt="" class="sale__img">
                                         <div class="sale__content">
                                             <div class="sale__label sale__label-yl-or"><i class="fas fa-gopuram"></i></i></div>
                                             <h1 class="sale__name">Hong Kong</h1>
@@ -333,7 +358,7 @@
                                 <div class="col c-12 m-12 l-6">
                                     <div class="row blog__item mb-24 sm-row-reverse">
                                         <div class="col c-12 l-6 m-6 blog__img">
-                                            <img class="" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/04/blog-01.jpg" alt="">
+                                            <img class="" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/03/blog-04.jpg" alt="">
                                         </div>
                                         <div class="col c-12 l-6 m-6 blog__content bg-blue">
                                             <p class="content__first text-uppercase white-color">our news</p>
@@ -348,7 +373,7 @@
                                 <div class="col c-12 m-12 l-6">
                                     <div class="row blog__item mb-24"mb-24>
                                         <div class="col c-12 l-6 m-6 blog__img">
-                                            <img class="" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/04/blog-01.jpg" alt="">
+                                            <img class="" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/04/blog-03.jpg" alt="">
                                         </div>
                                         <div class="col c-12 l-6 m-6 blog__content bg-green">
                                             <p class="content__first text-uppercase white-color">our news</p>
@@ -361,13 +386,13 @@
                                 <div class="col c-12 m-12 l-6">
                                     <div class="row blog__item mb-24 sm-row-reverse">
                                         <div class="col c-12 l-6 m-6 blog__img">
-                                            <img class="" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/04/blog-01.jpg" alt="">
+                                            <img class="" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/city-tours/wp-content/uploads/sites/5/2018/04/blog-02.jpg" alt="">
                                         </div>
                                         <div class="col c-12 l-6 m-6 blog__content">
                                             <p class="content__first text-uppercase">our news</p>
-                                            <h1 class="blog-content__title title-color">Travel Events</h1>
+                                            <h1 class="blog-content__title title-color">Love Travel</h1>
                                             <p class="blog__dec">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
-                                            <button class="btn text-uppercase btn__blog">read more</button>
+                                            <button class="btn text-uppercase btn__red">read more</button>
                                         </div>
                                     </div>                                    
                                 </div>
@@ -442,5 +467,9 @@
             </div>
         </footer>
     </div>
+    <script>
+        
+
+    </script>
 </body>
 </html>

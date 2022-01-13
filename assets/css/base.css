@@ -79,7 +79,11 @@ ul, li {
 .btn__padding10-35 {
     padding: 10px 35px;
 }
-
+.btn__normal {
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    font-weight: 300;
+}
 .btn:hover {
     background-color: #fc7a00;
 }
@@ -148,4 +152,29 @@ ul, li {
     color: var(--white-color);
     text-transform: uppercase;
     background-color: #1bbc9b;
+}
+
+.move-left {
+    position: absolute;
+    top: 0px;
+    right: 200px;
+    width: 100%;
+    transform: translateX(200px);
+    transition: transform .5s ease-in;
+}
+.move-right {
+    position: absolute;
+    top: 66px;
+    right: -200px;
+    width: 100%;
+    transform: translateX(-200px);
+    transition: transform .5s ease-in;
+}
+.circular-move-1 {
+    position: absolute;
+    animation: circular-move 2s ease-in-out .2s infinite reverse;
+}
+.circular-move {
+    position: absolute;
+    animation: circular-move 2s ease-in-out .4s infinite reverse;
 }
